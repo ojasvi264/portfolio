@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace' => 'App\Http\Controllers\Backend', 'middleware' => 'auth'],function(){
+    Route::get('/', function () {
+        return view('backend.dashboard');
+    });
+
+//    Route::get('profile', function () {
+//        return view('auth.profile');
+//    })->name('profile');
+
+    Route::get('dashboard', function () {
+        return view('backend.dashboard');
+    })->name('dashboard');
+
+//    Route::post('/maintenance','AuthController@maintenanceMode')->name('maintenance');
+//
+//    Route::post('update-profile','AuthController@updateProfile')->name('auth.update-profile');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

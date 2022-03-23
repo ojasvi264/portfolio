@@ -1,0 +1,45 @@
+.main-section{
+    margin:0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #c1c1c1;
+}
+.added-images .img-thumbnail{
+    height:95px;
+    width:95px;
+}
+.fileinput-remove, .fileinput-upload{
+    display: none;    }
+.added-images .file-preview-frame{
+  width: 110px !important;
+  height: 130px !important;
+  margin:5px !important;
+  padding:4px !important;
+  display: inline-block !important;
+}
+.added-images .kv-file-content{
+  width: 100px !important;
+  height: 100px !important;
+}
+.added-images .file-footer-buttons button{
+  height: 20px !important;
+  line-height: 0px !important;
+  margin-bottom: 5px !important;
+}
+.added-images .file-footer-buttons i{
+  font-size:10px !important;
+}
+.close {
+  position: absolute;
+  font-size:13px;
+  margin-left: -20px;
+  /*background: #000;*/
+  color:red;
+  opacity:1 !important;
+}
+.file-drop-zone{
+  margin-left: 0px !important;
+  margin-right: 2px !important;
+}
+
