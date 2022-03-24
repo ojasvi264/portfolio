@@ -14,17 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['namespace' => 'App\Http\Controllers\Backend', 'middleware' => 'auth'],function(){
+    /* Dashboard */
     Route::get('/', function () {
         return view('backend.dashboard');
     });
+    Route::get('dashboard', function () {
+        return view('backend.dashboard');
+    })->name('dashboard');
 
 //    Route::get('profile', function () {
 //        return view('auth.profile');
 //    })->name('profile');
 
-    Route::get('dashboard', function () {
-        return view('backend.dashboard');
-    })->name('dashboard');
+
+    Route::resource('site-setting', 'SiteSettingController');
+
+    Route::resource('service', 'ServiceController');
+
+    Route::resource('about', 'AboutController');
 
 //    Route::post('/maintenance','AuthController@maintenanceMode')->name('maintenance');
 //

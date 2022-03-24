@@ -62,19 +62,19 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body p-0">
-                <a class="nav-link p-2 pl-5" href="#">
+                <a class="nav-link p-2 pl-5" href="{{route('site-setting.index')}}">
                     <i class="material-icons">note_add</i>
                     <span>Site Settings</span>
                 </a>
-                <a class="nav-link p-2 pl-5" href="#">
-                    <i class="material-icons">note_add</i>
-                    <span>Main News Setting</span>
-                </a>
+{{--                <a class="nav-link p-2 pl-5" href="#">--}}
+{{--                    <i class="material-icons">note_add</i>--}}
+{{--                    <span>Main News Setting</span>--}}
+{{--                </a>--}}
 
-                <a class="nav-link p-2 pl-5" href="#">
-                    <i class="material-icons">note_add</i>
-                    <span>Add Province</span>
-                </a>
+{{--                <a class="nav-link p-2 pl-5" href="#">--}}
+{{--                    <i class="material-icons">note_add</i>--}}
+{{--                    <span>Add Province</span>--}}
+{{--                </a>--}}
 {{--              <a class="nav-link p-2 pl-5" href="#">--}}
 {{--                <i class="material-icons">note_add</i>--}}
 {{--                <span>Image Slider</span>--}}
@@ -83,10 +83,10 @@
 {{--                <i class="material-icons">note_add</i>--}}
 {{--                <span>Useful Links</span>--}}
 {{--              </a>--}}
-              <a class="nav-link p-2 pl-5" href="#">
-                <i class="material-icons">note_add</i>
-                <span>Social Media Links</span>
-              </a>
+{{--              <a class="nav-link p-2 pl-5" href="#">--}}
+{{--                <i class="material-icons">note_add</i>--}}
+{{--                <span>Social Media Links</span>--}}
+{{--              </a>--}}
 {{--              <a class="nav-link p-2 pl-5" href="#">--}}
 {{--                <i class="material-icons">note_add</i>--}}
 {{--                <span>Requested Contacts</span>--}}
@@ -94,48 +94,24 @@
             </div>
         </div>
       </div>
-
-{{--        <div class="nav-item has-child">--}}
-{{--            <div class="card-header p-0 m-0" id="heading3">--}}
-{{--                <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse" data-target="#collapse4"--}}
-{{--                     aria-expanded="false" aria-controls="collapseTwo">--}}
-{{--                    <i class="material-icons">note_add</i>--}}
-{{--                    <span> Group Setup</span>--}}
-{{--                    <i class="fa fa-plus ml-auto"></i>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div id="collapse4" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">--}}
-{{--                <div class="card-body p-0">--}}
-{{--                    <a class="nav-link p-2 pl-5" href="{{route('group.create')}}">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Add Group</span>--}}
-{{--                    </a>--}}
-{{--                    <a class="nav-link p-2 pl-5" href="{{ route('group.index')}}">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Group List</span>--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
       <div class="nav-item has-child">
         <div class="card-header p-0 m-0" id="heading3">
                 <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse" data-target="#collapse3"
                     aria-expanded="false" aria-controls="collapseTwo">
                     <i class="material-icons">note_add</i>
-                <span> Category Setup</span>
+                <span> Service Setup</span>
                   <i class="fa fa-plus ml-auto"></i>
                   </div>
         </div>
         <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
             <div class="card-body p-0">
-              <a class="nav-link p-2 pl-5" href="#">
+              <a class="nav-link p-2 pl-5" href="{{route('service.create')}}">
                 <i class="material-icons">note_add</i>
-                <span>Category</span>
+                <span>Add Service</span>
               </a>
-              <a class="nav-link p-2 pl-5" href="#">
+              <a class="nav-link p-2 pl-5" href="{{route('service.index')}}">
                 <i class="material-icons">note_add</i>
-                <span>Category List</span>
+                <span>Service List</span>
               </a>
             </div>
         </div>
@@ -162,111 +138,13 @@
                 </div>
             </div>
         </div>
-
-{{--        <div class="nav-item has-child">--}}
-{{--            <div class="card-header p-0 m-0" id="heading3">--}}
-{{--                <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse" data-target="#collapse5"--}}
-{{--                     aria-expanded="false" aria-controls="collapseTwo">--}}
-{{--                    <i class="material-icons">note_add</i>--}}
-{{--                    <span> Pages Setup</span>--}}
-{{--                    <i class="fa fa-plus ml-auto"></i>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div id="collapse5" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">--}}
-{{--                <div class="card-body p-0">--}}
-{{--                    <a class="nav-link p-2 pl-5" href="#">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Add Page</span>--}}
-{{--                    </a>--}}
-{{--                    <a class="nav-link p-2 pl-5" href="#">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Pages List</span>--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
-{{--        <div class="nav-item has-child">--}}
-{{--            <div class="card-header p-0 m-0" id="heading3">--}}
-{{--                <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse" data-target="#collapse6"--}}
-{{--                     aria-expanded="false" aria-controls="collapseTwo">--}}
-{{--                    <i class="material-icons">note_add</i>--}}
-{{--                    <span> Tag Setup</span>--}}
-{{--                    <i class="fa fa-plus ml-auto"></i>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div id="collapse6" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">--}}
-{{--                <div class="card-body p-0">--}}
-{{--                    <a class="nav-link p-2 pl-5" href="#">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Add Tags</span>--}}
-{{--                    </a>--}}
-{{--                    <a class="nav-link p-2 pl-5" href="#">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Tag List</span>--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
-{{--        <div class="nav-item has-child">--}}
-{{--            <div class="card-header p-0 m-0" id="heading3">--}}
-{{--                <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse" data-target="#collapse7"--}}
-{{--                     aria-expanded="false" aria-controls="collapse7">--}}
-{{--                    <i class="material-icons">note_add</i>--}}
-{{--                    <span> Advertisement Setup</span>--}}
-{{--                    <i class="fa fa-plus ml-auto"></i>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div id="collapse7" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">--}}
-{{--                <div class="card-body p-0">--}}
-{{--                    <a class="nav-link p-2 pl-5" href="#">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Advertisement Layout</span>--}}
-{{--                    </a>--}}
-{{--                    <a class="nav-link p-2 pl-5" href="#">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Advertisements</span>--}}
-{{--                    </a>--}}
-{{--                    <a class="nav-link p-2 pl-5" href="#">--}}
-{{--                        <i class="material-icons">note_add</i>--}}
-{{--                        <span>Layout Pages</span>--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--      <li class="nav-item">--}}
-{{--        <a class="nav-link " href="#">--}}
-{{--          <i class="material-icons">note_add</i>--}}
-{{--          <span>Aboutus Pages</span>--}}
-{{--        </a>--}}
-{{--      </li>--}}
       <li class="nav-item">
         <a class="nav-link " href="#">
           <i class="material-icons">note_add</i>
           <span>Contact Page</span>
         </a>
       </li>
-{{--       </div> --}}
-      {{--
-      <li class="nav-item">
-      <a class="nav-link " href="{{route('testimonials')}}">
-          <i class="material-icons">note_add</i>
-          <span>Testimonials</span>
-        </a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link " href="{{route('useful_links')}}">
-          <i class="material-icons">note_add</i>
-          <span>Useful Links</span>
-        </a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link " href="{{route('social_media')}}">
-          <i class="material-icons">note_add</i>
-          <span>Social Media Links</span>
-        </a>
-      </li> --}}
+
     </ul>
   </div>
 </aside>
