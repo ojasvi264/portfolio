@@ -26,7 +26,8 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string|null
      */
-//     protected $namespace = 'App\\Http\\Controllers\\Backend';
+     protected $namespace = 'App\\Http\\Controllers';
+     protected $frontendNamespace = 'App\\Http\\Controllers\\Frontend';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -47,6 +48,10 @@ class RouteServiceProvider extends ServiceProvider
 //                ->namespace($this->namespace)
                 ->prefix('admin')
                 ->group(base_path('routes/web.php'));
+
+            Route::middleware('web')
+                ->namespace($this->frontendNamespace)
+                ->group(base_path('routes/frontend.php'));
         });
     }
 

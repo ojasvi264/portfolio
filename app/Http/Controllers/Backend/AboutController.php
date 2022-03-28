@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Backend\AboutRequest;
 use App\Models\About;
 use Illuminate\Http\Request;
 
@@ -35,9 +36,15 @@ class AboutController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AboutRequest $request)
     {
-        //
+        $edit = About::first();
+        if ($edit){
+            $edit->update($request->all());
+        }else{
+            About::create($request->all());
+        }
+        return redirect()->route('about.index')->withMsg('About has been updated successfully');
     }
 
     /**

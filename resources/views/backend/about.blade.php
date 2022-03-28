@@ -23,85 +23,64 @@
                     @endif
                     <div class="row pr-3">
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="name" class="">Name <span class="required">*</span> </label>
-                            <input class="form-control form-control-lg mb-1" id="name" type="text" name="name"
-                                   value="{{old('name')?old('name'):(isset($edit)?$edit->name:'')}}"
+                            <label for="title" class="">Title<span class="required">*</span> </label>
+                            <input class="form-control form-control-lg mb-1" id="title" type="text" name="title"
+                                   value="{{old('title')?old('title'):(isset($edit)?$edit->title:'')}}"
                                    placeholder="Input Name">
-                            @if($errors->first('name'))
+                            @if($errors->first('title'))
                                 <div class="text text-danger ">
-                                    {{$errors->first('name')}}
+                                    {{$errors->first('title')}}
                                 </div>
                             @endif
                         </div>
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for=email>Email Address <span class="required">*</span> </label>
-                            <input class="form-control form-control-lg mb-1 " id="email" type="text" name="email"
-                                   value="{{old('email')?old('email'):(isset($edit)?$edit->email:'')}}"
-                                   placeholder="Your email address">
-                            @if($errors->first('email'))
+                            <label for=designation>Designation<span class="required">*</span> </label>
+                            <input class="form-control form-control-lg mb-1 " id="designation" type="text" name="designation"
+                                   value="{{old('designation')?old('designation'):(isset($edit)?$edit->designation:'')}}"
+                                   placeholder="Your designation">
+                            @if($errors->first('designation'))
                                 <div class="text text-danger">
-                                    {{$errors->first('email')}}
+                                    {{$errors->first('designation')}}
                                 </div>
                             @endif
                         </div>
                     </div>
                     <div class="row pr-3">
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="phone">Phone Number <span class="required">*</span> </label>
-                            <input class="form-control form-control-lg mb-1" id="phone" type="text" name="phone"
-                                   value="{{old('phone')?old('phone'):(isset($edit)?$edit->phone:'')}}"
-                                   placeholder="Your phone number">
-                            @if($errors->first('phone'))
+                            <label for="completed_projects" class=""> Completed Projects<span class="required">*</span> </label>
+                            <input class="form-control form-control-lg mb1" id="completed_projects" type="number" name="completed_projects"
+                                   value="{{old('completed_projects')?old('completed_projects'):(isset($edit)?$edit->completed_projects:'')}}"
+                                   placeholder="Input Completed Projects">
+                            @if($errors->first('completed_projects'))
                                 <div class="text text-danger">
-                                    {{$errors->first('phone')}}
-                                </div>
-                            @endif
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="address" class=""> Address<span class="required">*</span> </label>
-                            <input class="form-control form-control-lg mb1" id="address" type="text" name="address"
-                                   value="{{old('address')?old('address'):(isset($edit)?$edit->address:'')}}"
-                                   placeholder="Input Address">
-                            @if($errors->first('address'))
-                                <div class="text text-danger">
-                                    {{$errors->first('address')}}
+                                    {{$errors->first('completed_projects')}}
                                 </div>
                             @endif
                         </div>
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="facebook_link">Facebook Link</label>
-                            <input class="form-control form-control-lg mb-1" id="facebook_link" type="text" name="facebook_link" value="{{old('facebook_link')?old('facebook_link'):(isset($edit)?$edit->facebook_link:'')}}" placeholder="Your facebook link">
-                            @if($errors->first('facebook_link'))
+                            <label for="ongoing_projects">Ongoing Projects</label>
+                            <input class="form-control form-control-lg mb-1" id="ongoing_projects" type="number" name="ongoing_projects" value="{{old('ongoing_projects')?old('ongoing_projects'):(isset($edit)?$edit->ongoing_projects:'')}}" placeholder="Your Ongoing Projects">
+                            @if($errors->first('ongoing_projects'))
                                 <div class="text text-danger">
-                                    {{$errors->first('facebook_link')}}
+                                    {{$errors->first('ongoing_projects')}}
                                 </div>
                             @endif
                         </div>
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="linkedin_link">Linkedin Link</label>
-                            <input class="form-control form-control-lg mb-1" id="linkedin_link" type="text" name="linkedin_link" value="{{old('linkedin_link')?old('linkedin_link'):(isset($edit)?$edit->linkedin_link:'')}}" placeholder="Your linkedin link">
-                            @if($errors->first('linkedin_link'))
+                            <label for="companies">Companies</label>
+                            <input class="form-control form-control-lg mb-1" id="companies" type="number" name="companies" value="{{old('companies')?old('companies'):(isset($edit)?$edit->companies:'')}}" placeholder="Your Companies">
+                            @if($errors->first('companies'))
                                 <div class="text text-danger">
-                                    {{$errors->first('linkedin_link')}}
+                                    {{$errors->first('companies')}}
                                 </div>
                             @endif
                         </div>
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="instagram_link">Instagram Link </label>
-                            <input class="form-control form-control-lg mb-1" id="instagram_link" type="text" name="instagram_link" value="{{old('instagram_link')?old('instagram_link'):(isset($edit)?$edit->instagram_link:'')}}" placeholder="Your instagram link">
-                            @if($errors->first('instagram_link'))
+                            <label for="experience">Experience</label>
+                            <input class="form-control form-control-lg mb-1" id="experience" type="number" name="experience" value="{{old('experience')?old('experience'):(isset($edit)?$edit->experience:'')}}" placeholder="Your Experience">
+                            @if($errors->first('experience'))
                                 <div class="text text-danger">
-                                    {{$errors->first('instagram_link')}}
-                                </div>
-                            @endif
-                        </div>
-                        <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="twitter_link">Twitter Link </label>
-                            <input class="form-control form-control-lg mb-1" id="twitter_link" type="text" name="twitter_link" value="{{old('twitter_link')?old('twitter_link'):(isset($edit)?$edit->twitter_link:'')}}" placeholder="Your youtube link">
-                            @if($errors->first('twitter_link'))
-                                <div class="text text-danger">
-                                    {{$errors->first('twitter_link')}}
+                                    {{$errors->first('experience')}}
                                 </div>
                             @endif
                         </div>

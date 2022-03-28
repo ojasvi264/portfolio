@@ -138,6 +138,12 @@
                 </div>
             </div>
         </div>
+        <li class="nav-item">
+            <a class="nav-link " href="{{route('about.index')}}">
+                <i class="material-icons">note_add</i>
+                <span>About Page</span>
+            </a>
+        </li>
       <li class="nav-item">
         <a class="nav-link " href="#">
           <i class="material-icons">note_add</i>
