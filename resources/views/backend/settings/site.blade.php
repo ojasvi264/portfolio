@@ -69,6 +69,43 @@
                                 </div>
                             @endif
                         </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 p-0 pl-3">
+                        <label for=designation1>Designation<span class="required">*</span> </label>
+                        <input class="form-control form-control-lg mb-1 " id="designation1" type="text" name="designation1"
+                               value="{{old('designation1')?old('designation1'):(isset($edit)?$edit->designation1:'')}}"
+                               placeholder="Your designation1">
+                        @if($errors->first('designation1'))
+                            <div class="text text-danger">
+                                {{$errors->first('designation1')}}
+                            </div>
+                        @endif
+                    </div>
+                    <div class="row pr-3">
+                        <div class="col-md-6 col-sm-6 p-0 pl-3">
+                            <label for=designation2>Second Designation</label>
+                            <input class="form-control form-control-lg mb-1 " id="designation2" type="text" name="designation2"
+                                   value="{{old('designation2')?old('designation2'):(isset($edit)?$edit->designation2:'')}}"
+                                   placeholder="Your second designation">
+                            @if($errors->first('designation2'))
+                                <div class="text text-danger">
+                                    {{$errors->first('designation2')}}
+                                </div>
+                            @endif
+                        </div>
+                        <div class="col-md-6 col-sm-6 p-0 pl-3">
+                            <label for=designation3>Third Designation</label>
+                            <input class="form-control form-control-lg mb-1 " id="designation3" type="text" name="designation3"
+                                   value="{{old('designation3')?old('designation3'):(isset($edit)?$edit->designation3:'')}}"
+                                   placeholder="Your third designation">
+                            @if($errors->first('designation3'))
+                                <div class="text text-danger">
+                                    {{$errors->first('designation3')}}
+                                </div>
+                            @endif
+                        </div>
+                    </div>
+                    <div class="row pr-3">
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
                             <label for="facebook_link">Facebook Link</label>
                             <input class="form-control form-control-lg mb-1" id="facebook_link" type="text" name="facebook_link" value="{{old('facebook_link')?old('facebook_link'):(isset($edit)?$edit->facebook_link:'')}}" placeholder="Your facebook link">
@@ -87,6 +124,8 @@
                                 </div>
                             @endif
                         </div>
+                    </div>
+                    <div class="row pr-3">
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
                             <label for="instagram_link">Instagram Link </label>
                             <input class="form-control form-control-lg mb-1" id="instagram_link" type="text" name="instagram_link" value="{{old('instagram_link')?old('instagram_link'):(isset($edit)?$edit->instagram_link:'')}}" placeholder="Your instagram link">
@@ -105,6 +144,7 @@
                                 </div>
                             @endif
                         </div>
+                    </div>
 {{--                    <div class="col-md-12 col-sm-12 p-0 pl-3">--}}
 {{--                        <label>Map Iframe Location </label>--}}
 {{--                        @if($errors->first('map_iframe'))--}}
@@ -129,7 +169,6 @@
                         </textarea>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-12">

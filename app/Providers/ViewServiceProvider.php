@@ -28,9 +28,7 @@ class ViewServiceProvider extends ServiceProvider
     {
         View::composer('*', function ($view) {
             $siteSetting = SiteSetting::firstOrFail();
-            $about = About::firstOrFail();
             $view->with('siteSetting', $siteSetting);
-            $view->with('about', $about);
         });
     }
 }

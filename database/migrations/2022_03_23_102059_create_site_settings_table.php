@@ -20,6 +20,9 @@ class CreateSiteSettingsTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('address');
+            $table->string('designation1');
+            $table->string('designation2')->nullable();
+            $table->string('designation3')->nullable();
             $table->string('facebook_link')->nullable();
             $table->string('linkedin_link')->nullable();
             $table->string('twitter_link')->nullable();

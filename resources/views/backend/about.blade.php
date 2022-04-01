@@ -21,29 +21,16 @@
                         @method('POST')
                         <input type="hidden" name="id" value="{{$edit->id}}"/>
                     @endif
-                    <div class="row pr-3">
-                        <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="title" class="">Title<span class="required">*</span> </label>
-                            <input class="form-control form-control-lg mb-1" id="title" type="text" name="title"
-                                   value="{{old('title')?old('title'):(isset($edit)?$edit->title:'')}}"
-                                   placeholder="Input Name">
-                            @if($errors->first('title'))
-                                <div class="text text-danger ">
-                                    {{$errors->first('title')}}
-                                </div>
-                            @endif
-                        </div>
-                        <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for=designation>Designation<span class="required">*</span> </label>
-                            <input class="form-control form-control-lg mb-1 " id="designation" type="text" name="designation"
-                                   value="{{old('designation')?old('designation'):(isset($edit)?$edit->designation:'')}}"
-                                   placeholder="Your designation">
-                            @if($errors->first('designation'))
-                                <div class="text text-danger">
-                                    {{$errors->first('designation')}}
-                                </div>
-                            @endif
-                        </div>
+                    <div class="col-md-12 col-sm-12 p-0 pl-3">
+                        <label for="title" class="">Title<span class="required">*</span> </label>
+                        <input class="form-control form-control-lg mb-1" id="title" type="text" name="title"
+                               value="{{old('title')?old('title'):(isset($edit)?$edit->title:'')}}"
+                               placeholder="Input Name">
+                        @if($errors->first('title'))
+                            <div class="text text-danger ">
+                                {{$errors->first('title')}}
+                            </div>
+                        @endif
                     </div>
                     <div class="row pr-3">
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
@@ -58,7 +45,7 @@
                             @endif
                         </div>
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="ongoing_projects">Ongoing Projects</label>
+                            <label for="ongoing_projects">Ongoing Projects <span class="required">*</span> </label>
                             <input class="form-control form-control-lg mb-1" id="ongoing_projects" type="number" name="ongoing_projects" value="{{old('ongoing_projects')?old('ongoing_projects'):(isset($edit)?$edit->ongoing_projects:'')}}" placeholder="Your Ongoing Projects">
                             @if($errors->first('ongoing_projects'))
                                 <div class="text text-danger">
@@ -66,8 +53,10 @@
                                 </div>
                             @endif
                         </div>
+                    </div>
+                    <div class="row pr-3">
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="companies">Companies</label>
+                            <label for="companies">Companies <span class="required">*</span> </label>
                             <input class="form-control form-control-lg mb-1" id="companies" type="number" name="companies" value="{{old('companies')?old('companies'):(isset($edit)?$edit->companies:'')}}" placeholder="Your Companies">
                             @if($errors->first('companies'))
                                 <div class="text text-danger">
@@ -76,7 +65,7 @@
                             @endif
                         </div>
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
-                            <label for="experience">Experience</label>
+                            <label for="experience">Experience <span class="required">*</span> </label>
                             <input class="form-control form-control-lg mb-1" id="experience" type="number" name="experience" value="{{old('experience')?old('experience'):(isset($edit)?$edit->experience:'')}}" placeholder="Your Experience">
                             @if($errors->first('experience'))
                                 <div class="text text-danger">
@@ -84,6 +73,7 @@
                                 </div>
                             @endif
                         </div>
+                    </div>
 {{--                    <div class="col-md-12 col-sm-12 p-0 pl-3">--}}
 {{--                        <label>Map Iframe Location </label>--}}
 {{--                        @if($errors->first('map_iframe'))--}}
@@ -108,7 +98,6 @@
                         </textarea>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-12">

@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
 Route::get('/', 'HomeController@index')->name('frontend.index');
+Route::get('/about', 'HomeController@about')->name('frontend.about');
+Route::get('/contact', 'HomeController@contact')->name('frontend.contact');
+Route::post('contactus/store', 'HomeController@contactStore')->name('frontend.contact.store');
+
 
 //Route::get('/contactus', 'ContactController@index')->name('frontend.contactus');
 
@@ -23,7 +27,6 @@ Route::get('/', 'HomeController@index')->name('frontend.index');
 //Route::get('/{slug}', 'NewsController@newsDetail')->name('frontend.news.detail');
 
 //ContactUs
-//Route::post('contactus/store', 'ContactController@store')->name('frontend.contactus.store');
 
 //Route::get('/media/{encrypt}', function($encrypt){
 //    $url = Crypt::decrypt($encrypt);

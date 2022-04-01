@@ -9843,7 +9843,9 @@ a.link-style:hover:before {
   width: 24px;
   height: 24px;
   padding: 3px 0;
-  margin-left: 20px; }
+  margin-left: 20px;
+    cursor: pointer;
+}
 
 .gg-sun {
   position: relative;
@@ -9861,7 +9863,8 @@ a.link-style:hover:before {
   width: 20px;
   height: 20px;
   border: 2px solid;
-  border-bottom: 2px solid transparent; }
+  border-bottom: 2px solid transparent;
+}
 
 .gg-moon,
 .gg-moon:after {

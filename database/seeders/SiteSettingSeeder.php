@@ -21,6 +21,8 @@ class SiteSettingSeeder extends Seeder
         $model->email = 'lalamdorje@gmail.com';
         $model->address = 'Bhaktapur, Nepal';
         $model->phone = '9842070594';
+        $model->designation1 = 'Web Developer';
+        $model->designation2 = 'PHP Laravel Developer';
         $model->facebook_link = 'https://www.facebook.com/ojasvi.tamang.7';
         $model->linkedin_link = 'https://www.linkedin.com/in/ojasvi-tamang/';
         $model->instagram_link = 'https://www.instagram.com';

@@ -159,8 +159,6 @@
                 @endif
                 @yield('content')
             </div>
-
-
             @include('backend.layouts.footer')
         </main>
     </div>

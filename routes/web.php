@@ -33,6 +33,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'middleware' => 'au
 
     Route::resource('about', 'AboutController');
 
+    Route::resource('contact', 'ContactController');
+
+    Route::resource('progress', 'ProgressController');
+
 //    Route::post('/maintenance','AuthController@maintenanceMode')->name('maintenance');
 //
 //    Route::post('update-profile','AuthController@updateProfile')->name('auth.update-profile');
