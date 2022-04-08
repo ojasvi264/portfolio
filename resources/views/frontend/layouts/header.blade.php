@@ -18,13 +18,13 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item {!! \Illuminate\Support\Facades\Request::is('/') ? 'active' : '' !!}">
                         <a class="nav-link" href="{{route('frontend.index')}}">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item @@about__active">
+                    <li class="nav-item {!! \Illuminate\Support\Facades\Request::is('about') ? 'active' : '' !!}">
                         <a class="nav-link" href="{{route('frontend.about')}}">About</a>
                     </li>
-                    <li class="nav-item @@contact__active">
+                    <li class="nav-item {!! \Illuminate\Support\Facades\Request::is('contact') ? 'active' : '' !!}">
                         <a class="nav-link" href="{{route('frontend.contact')}}">Contact</a>
                     </li>
                 </ul>

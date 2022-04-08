@@ -1,3 +1,4 @@
+@if(!$services->isEmpty())
 <!-- home page services section -->
 <section class="w3l-services">
     <div class="blog py-5" id="services">
@@ -34,3 +35,5 @@
     </div>
 </section>
 <!-- //home page services section -->
+@endif
+
