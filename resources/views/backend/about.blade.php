@@ -22,6 +22,24 @@
                         <input type="hidden" name="id" value="{{$edit->id}}"/>
                     @endif
                     <div class="col-md-12 col-sm-12 p-0 pl-3">
+                        <div class="row col-md-12 mb-5">
+                            <div class="col-md-4">
+                                <label>Logo Image<span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-7 card p-3">
+                                <img class="{{isset($edit)?'d-block':''}} m-auto" id="profile_image"
+                                     src="{{isset($edit) ? $edit->image : asset('backend/images/author-img.jpg')}}"
+                                     width="150px" height="150px"/>
+                                <input class="form-control mt-2" type="file" id="mediaFile" name="profile_image"/>
+                                @if($errors->first('profile_image'))
+                                    <div class="text text-danger">
+                                        * {{$errors->first('profile_image')}}
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 p-0 pl-3">
                         <label for="title" class="">Title<span class="required">*</span> </label>
                         <input class="form-control form-control-lg mb-1" id="title" type="text" name="title"
                                value="{{old('title')?old('title'):(isset($edit)?$edit->title:'')}}"
@@ -136,8 +154,8 @@
 
     <script type="text/javascript">
         $('#mediaFile').on('change', function () {
-            $('#logo').removeClass('d-none').addClass('d-block');
-            $('#logo').attr('src', window.URL.createObjectURL(this.files[0]));
+            $('#profile_image').removeClass('d-none').addClass('d-block');
+            $('#profile_image').attr('src', window.URL.createObjectURL(this.files[0]));
         });
         // $(function() {
         // 	$('#save').on('click', function(e) {

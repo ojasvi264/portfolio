@@ -14,13 +14,15 @@ class AboutSeeder extends Seeder
      */
     public function run()
     {
-        About::create([
-            'title' => "I'm Ojasvi Dev Tamang, a Web Developer",
-            'description' => "Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsum non velit reprehenderit, molestias culpa!",
-            'completed_projects' => '12',
-            'ongoing_projects' => '2',
-            'companies' => '3',
-            'experience' => '2',
-        ]);
+        $model = new About();
+        $model->title = "I'm Ojasvi Dev Tamang, a Web Developer";
+        $model->description = "Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsum non velit reprehenderit, molestias culpa!";
+        $model->completed_projects = '12';
+        $model->ongoing_projects = "2";
+        $model->companies = '3';
+        $model->experience = '2';
+        $model->addMediaFromUrl(asset('backend/images/author-img.jpg'))->preservingOriginal()->toMediaCollection('default');
+        $model->save();
+        $model->image = $model->getMedia()[0]->getFullUrl();
     }
 }
