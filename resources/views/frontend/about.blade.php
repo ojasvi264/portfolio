@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="position-relative">
-                        <img src="{{asset('frontend/images/myphoto1.jpg')}}" alt="" class="radius-image img-fluid">
+                        <img src="{{$about->image}}" alt="" class="radius-image img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-8 mt-lg-0 mt-5">
