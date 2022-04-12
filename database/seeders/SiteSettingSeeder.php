@@ -27,6 +27,8 @@ class SiteSettingSeeder extends Seeder
         $model->linkedin_link = 'https://www.linkedin.com/in/ojasvi-tamang/';
         $model->instagram_link = 'https://www.instagram.com';
         $model->twitter_link = 'https://www.twitter.com';
+        $model->addMediaFromUrl(asset('backend/images/profile-img.png'))->preservingOriginal()->toMediaCollection('default');
         $model->save();
+        $model->image = $model->getMedia()[0]->getFullUrl();
     }
 }
