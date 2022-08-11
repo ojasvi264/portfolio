@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="my-social mt-lg-5 mt-4">
-                        <a href="#download" class="btn btn-style btn-primary">Download CV</a>
+                        <a href="{{$about->cv}}" class="btn btn-style btn-primary" target="_blank" download>Download CV</a>
                         <ul class="social m-0 p-0">
                             <li><a href="{{$siteSetting->twitter_link}}" target="_blank"><span class="fa fa-twitter"></span></a></li>
                             <li><a href="{{$siteSetting->instagram_link}}" target="_blank"><span class="fa fa-instagram"></span></a></li>

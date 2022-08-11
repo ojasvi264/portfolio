@@ -17,4 +17,8 @@ class About extends Model implements HasMedia
     public function getImageAttribute(){
         return $this->hasMedia() ? $this->getMedia()[0]->getFullUrl() : asset ('backend/images/author-img.jpg');
     }
+
+    public function getCvAttribute(){
+        return $this->hasMedia('pp') ? $this->getMedia('pp')[0]->getFullUrl() : '';
+    }
 }

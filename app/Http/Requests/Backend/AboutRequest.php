@@ -25,9 +25,6 @@ class AboutRequest extends FormRequest
     {
         return [
             'title' => 'required',
-            'designation' => 'required',
-            'designation2' => 'nullable',
-            'designation3' => 'nullable',
             'description' => 'required',
             'completed_projects' => 'required',
             'ongoing_projects' => 'required',

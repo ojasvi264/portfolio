@@ -44,6 +44,18 @@ class AboutController extends Controller
         }else{
             About::create($request->all());
         }
+        if ($request->hasFile('profile_image')){
+            if ($edit->hasMedia()){
+                $edit->deleteMedia($edit->getMedia()[0]);
+                $edit->addMedia($request->file('profile_image'))->toMediaCollection();
+            }
+        if ($request->hasFile('cv')){
+            if ($edit->hasMedia('pp')){
+                $edit->deleteMedia($edit->getMedia('pp')[0]);
+                $edit->addMedia($request->file('cv'))->toMediaCollection('pp');
+            }
+        }
+        }
         return redirect()->route('about.index')->withMsg('About has been updated successfully');
     }
 

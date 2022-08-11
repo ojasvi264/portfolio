@@ -30,10 +30,28 @@
                                 <img class="{{isset($edit)?'d-block':''}} m-auto" id="profile_image"
                                      src="{{isset($edit) ? $edit->image : asset('backend/images/author-img.jpg')}}"
                                      width="150px" height="150px"/>
-                                <input class="form-control mt-2" type="file" id="mediaFile" name="profile_image"/>
+                                <input class="form-control mt-2" type="file" id="mediaFile" name="profile_image" accept="image/*"/>
                                 @if($errors->first('profile_image'))
                                     <div class="text text-danger">
                                         * {{$errors->first('profile_image')}}
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 p-0 pl-3">
+                        <div class="row col-md-12 mb-5">
+                            <div class="col-md-4">
+                                <label>CV<span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-7 card p-3">
+                                <img class="{{isset($edit)?'d-block':''}} m-auto" id="cv"
+                                     src="@if(!empty($edit->cv)){{asset('frontend/images/pdf.png')}} @endif"
+                                     width="150px" height="150px"/>
+                                <input class="form-control mt-2" type="file" id="mediaCv" name="cv" accept=".xlsx,.xls,.doc, .docx,.ppt, .pptx,.txt,.pdf"/>
+                                @if($errors->first('cv'))
+                                    <div class="text text-danger">
+                                        * {{$errors->first('cv')}}
                                     </div>
                                 @endif
                             </div>
@@ -156,6 +174,10 @@
         $('#mediaFile').on('change', function () {
             $('#profile_image').removeClass('d-none').addClass('d-block');
             $('#profile_image').attr('src', window.URL.createObjectURL(this.files[0]));
+        });
+        $('#mediaCv').on('change', function () {
+            $('#cv').removeClass('d-none').addClass('d-block');
+            $('#cv').attr('src', window.URL.createObjectURL(this.files[0]));
         });
         // $(function() {
         // 	$('#save').on('click', function(e) {

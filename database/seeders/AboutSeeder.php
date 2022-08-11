@@ -22,7 +22,9 @@ class AboutSeeder extends Seeder
         $model->companies = '3';
         $model->experience = '2';
         $model->addMediaFromUrl(asset('backend/images/author-img.jpg'))->preservingOriginal()->toMediaCollection('default');
+        $model->addMediaFromUrl(asset('backend/documents/OjasviDevTamangCV.pdf '))->preservingOriginal()->toMediaCollection('pp');
         $model->save();
         $model->image = $model->getMedia()[0]->getFullUrl();
+        $model->cv = $model->getMedia('pp')[0]->getFullUrl();
     }
 }
