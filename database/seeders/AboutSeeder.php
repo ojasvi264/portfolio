@@ -23,9 +23,9 @@ class AboutSeeder extends Seeder
         After completing high school, I graduated from Nagarjuna College of IT, affiliated with Tribhuvan University. Throughout my bachelor's degree, I gained valuable hands-on experience through various projects, with standout projects being the Facial Recognition System for attendance tracking and the Event Management System.
         
         Currently employed as a backend developer, I have acquired valuable experience, but I am still eager to further enhance my skills and expand my knowledge.";
-        $model->completed_projects = '12';
+        $model->completed_projects = '12+';
         $model->ongoing_projects = "2";
-        $model->companies = '3';
+        $model->companies = '4';
         $model->experience = '2';
         $model->addMediaFromUrl(asset('backend/images/author-img.jpg'))->preservingOriginal()->toMediaCollection('default');
         $model->addMediaFromUrl(asset('backend/images/OjasviDevTamang.pdf'))->preservingOriginal()->toMediaCollection('cv');
