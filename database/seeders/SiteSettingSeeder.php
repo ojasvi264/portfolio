@@ -16,8 +16,8 @@ class SiteSettingSeeder extends Seeder
     {
 
         $model = new SiteSetting();
-        $model->name = 'Ojasvi';
-        $model->description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, excepturi. Distinctio accusantium fugit odit? Fugit ipsam. Sed ac fringilla ex. Nam mauris velit, ac cursus quis, non leo.';
+        $model->name = 'Ojasvi Dev Tamang';
+        $model->dob = date('1997-10-05');
         $model->email = 'lalamdorje@gmail.com';
         $model->address = 'Bhaktapur, Nepal';
         $model->phone = '9842070594';
@@ -27,6 +27,9 @@ class SiteSettingSeeder extends Seeder
         $model->linkedin_link = 'https://www.linkedin.com/in/ojasvi-tamang/';
         $model->instagram_link = 'https://www.instagram.com';
         $model->twitter_link = 'https://www.twitter.com';
+        $model->description = 'Skilled Software Engineer with hands-on experience building and optimizing web-based applications for diverse industry organizations. Friendly and engaging team player and an enthusiastic learner.
+
+        Keen to learn and excel in the field of computer science and software development. Developed many web applications and passionate in becoming a full stack developer. Eager to gain new skills and experience to develop a carrier in it.';
         $model->addMediaFromUrl(asset('backend/images/profile-img.png'))->preservingOriginal()->toMediaCollection('default');
         $model->save();
         $model->image = $model->getMedia()[0]->getFullUrl();

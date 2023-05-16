@@ -6,9 +6,9 @@
                 <span class="title-small">Hello</span>
                 <h1 class="mb-2 title"> <span>I'm</span> {{$siteSetting->name}} </h1>
                 <h1 class="mb-4 title"> a <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
-                <p>{{$siteSetting->description}}</p>
+                <p>{!! $siteSetting->description !!}</p>
                 <div class="mt-sm-5 mt-4">
-                    <a class="btn btn-primary btn-style mr-2" href="{{route('frontend.contact')}}"> Hire Me </a>
+                    <a class="btn btn-primary btn-style mr-2" href="mailto:{{$siteSetting->email}}"> Hire Me </a>
                     <a class="btn btn-outline-primary btn-style mr-2" href="{{route('frontend.about')}}"> Portfolio </a>
                 </div>
             </div>

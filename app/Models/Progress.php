@@ -10,8 +10,4 @@ class Progress extends Model
     use HasFactory;
     protected $table = "progresses";
     protected $fillable = ['name', 'percentage', 'status'];
-
-    public function isActive(){
-        return Progress::where('status', 1)->orderBy('id', 'desc')->take(5);
-    }
 }

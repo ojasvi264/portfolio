@@ -40,7 +40,7 @@
                             <p>{{$siteSetting->name}}</p>
                         </div>
                         <div class="single-info"><span>Age:</span>
-                            <p>24 Years</p>
+                            <p>25 Years</p>
                         </div>
                         <div class="single-info"><span>From:</span>
                             <p>{{$siteSetting->address}}</p>
@@ -66,62 +66,74 @@
 <!-- //about page about section -->
 
 <!-- about page second section -->
-{{--<div class="py-5 w3l-resume">--}}
-{{--    <div class="container py-lg-5 py-3">--}}
-{{--        <h5 class="title-small mb-2"> Hello</h5>--}}
-{{--        <h3 class="title-big mb-4">I Can give your business a new Creative start right away! </h3>--}}
-{{--        <p>I am a freelancer based in the United Kingdom and i have been building noteworthy UX/UI designs and websites--}}
-{{--            for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful--}}
-{{--            and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and--}}
-{{--            deliver faster</p>--}}
-{{--        <div class="row features-w3pvt-main mt-5 pt-md-3" id="features">--}}
-{{--            <div class="col-lg-4 col-md-6 feature-gird">--}}
-{{--                <div class="row features-hny-inner-gd">--}}
-{{--                    <div class="col-md-2 col-2 featured_grid_left">--}}
-{{--                        <div class="icon_left_grid">--}}
-{{--                            <span class="fa fa-laptop" aria-hidden="true"></span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-10 col-10 featured_grid_right_info">--}}
-{{--                        <h4><a class="link-hny" href="#url">Responsive Design </a></h4>--}}
-{{--                        <p>Lorem ipsum dolor sit amet elit consec tetur adipisi elit., rem!</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-lg-4 col-md-6 feature-gird mt-md-0 mt-4">--}}
-{{--                <div class="row features-hny-inner-gd">--}}
-{{--                    <div class="col-md-2 col-2 featured_grid_left">--}}
-{{--                        <div class="icon_left_grid">--}}
-{{--                            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-10 col-10 featured_grid_right_info">--}}
-{{--                        <h4><a class="link-hny" href="#url">Powerful Editor </a></h4>--}}
-{{--                        <p>Lorem ipsum dolor sit amet elit consec tetur adipisi elit., rem!</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-lg-4 col-md-6 feature-gird mt-lg-0 mt-md-5 mt-4">--}}
-{{--                <div class="row features-hny-inner-gd">--}}
-{{--                    <div class="col-md-2 col-2 featured_grid_left">--}}
-{{--                        <div class="icon_left_grid">--}}
-{{--                            <span class="fa fa-desktop" aria-hidden="true"></span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-10 col-10 featured_grid_right_info">--}}
-{{--                        <h4><a class="link-hny" href="#url">Creative Design </a></h4>--}}
-{{--                        <p>Lorem ipsum dolor sit amet elit consec tetur adipisi elit., rem!</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+<div class="py-5 w3l-resume">
+    <div class="container py-lg-5 py-3">
+        <h5 class="title-small mb-2"> Hello</h5>
+        <h3 class="title-big mb-4">I Can give your business a new Creative start right away! </h3>
+        <p>I am a skilled backend developer with a passion for software development. Throughout my career, I have successfully developed numerous websites and software applications, showcasing my expertise in various programming languages and frameworks. My attention to detail and problem-solving abilities have earned me a reputation for delivering high-quality solutions.<p><br>
 
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
+<p>Looking to expand my skills, I am aspiring to become a full stack developer. With my determination and aptitude for learning new technologies, I am well-equipped to pursue my goal of becoming a versatile and well-rounded developer. As I continue to grow in my career, I remain committed to pushing the boundaries of my capabilities and contributing to the advancement of the software development industry.</p>
+        <div class="row features-w3pvt-main mt-5 pt-md-3" id="features">
+            <div class="col-lg-3 col-md-6 feature-gird">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-laptop" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Database Design </a></h4>
+                        <p>Lorem ipsum dolor sit amet elit consec tetur adipisi elit., rem!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-gird mt-md-0 mt-4">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Backend Development </a></h4>
+                        <p>Lorem ipsum dolor sit amet elit consec tetur adipisi elit., rem!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-gird mt-lg-0 mt-md-5 mt-4">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-desktop" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Frontend Design and Integration</a></h4>
+                        <p>Lorem ipsum dolor sit amet elit consec tetur adipisi elit., rem!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-gird mt-lg-0 mt-md-5 mt-4">
+                <div class="row features-hny-inner-gd">
+                    <div class="col-md-2 col-2 featured_grid_left">
+                        <div class="icon_left_grid">
+                            <span class="fa fa-desktop" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-10 featured_grid_right_info">
+                        <h4><a class="link-hny" href="#url">Web Hosting</a></h4>
+                        <p>Lorem ipsum dolor sit amet elit consec tetur adipisi elit., rem!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <!-- //about page about section -->
 
 <!-- about page third section -->
-<section class="w3l-content-6 py-5">
+<!-- <section class="w3l-content-6 py-5">
     <div class="content-6-mian py-lg-5 py-md-4">
         <div class="container">
             <div class="content-info-in row">
@@ -149,7 +161,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- about page third section -->
 
 <!-- subscribe block -->
@@ -157,7 +169,7 @@
 {{--    <div class="img-one">--}}
 {{--        <img src="{{asset('frontend/images/g5.jpg')}}" alt=" " class="img-fluid">--}}
 {{--    </div>--}}
-    <div class="img-one content-mid text-center">
+    <!-- <div class="img-one content-mid text-center">
         <h3 class="title-big mt-5"> Stay up to date, Subscribe to the free Newsletter! </h3>
         <div class="subscribe mb-5">
             <form action="#url" method="GET" class="subscribe-form">
@@ -166,7 +178,7 @@
             </form>
         </div>
 
-    </div>
+    </div> -->
 {{--    <div class="img-one">--}}
 {{--        <img src="{{asset('frontend/images/g3.jpg')}}" alt=" " class="img-fluid">--}}
 {{--    </div>--}}
@@ -174,67 +186,67 @@
 <!-- //subscribe block -->
 
 <!-- achievements block -->
-{{--<section class="w3l-services">--}}
-{{--    <div class="w3l-achievements py-5" id="services">--}}
-{{--        <div class="container py-lg-5">--}}
-{{--            <h5 class="title-small text-center">My achievements</h5>--}}
-{{--            <h3 class="title-big text-center mb-sm-5 mb-4">Personal Awards</h3>--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-lg-6 item">--}}
-{{--                    <div class="card">--}}
-{{--                        <div class="box-wrap">--}}
-{{--                            <div class="icon">--}}
-{{--                                <span class="fa fa-globe"></span>--}}
-{{--                            </div>--}}
-{{--                            <h4><a href="#url">Website of the day</a></h4>--}}
-{{--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam--}}
-{{--                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+<section class="w3l-services">
+    <div class="w3l-achievements py-5" id="services">
+        <div class="container py-lg-5">
+            <h5 class="title-small text-center">My achievements</h5>
+            <h3 class="title-big text-center mb-sm-5 mb-4">Personal Awards</h3>
+            <div class="row">
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <h4><a href="#url">Website of the day</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>
+                        </div>
+                    </div>
+                </div>
 
-{{--                <div class="col-lg-6 item">--}}
-{{--                    <div class="card">--}}
-{{--                        <div class="box-wrap">--}}
-{{--                            <div class="icon">--}}
-{{--                                <span class="fa fa-laptop"></span>--}}
-{{--                            </div>--}}
-{{--                            <h4><a href="#url"> Awards Site Of The Day</a></h4>--}}
-{{--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam--}}
-{{--                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-laptop"></span>
+                            </div>
+                            <h4><a href="#url"> Awards Site Of The Day</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>
+                        </div>
+                    </div>
+                </div>
 
-{{--                <div class="col-lg-6 item">--}}
-{{--                    <div class="card">--}}
-{{--                        <div class="box-wrap mb-lg-0">--}}
-{{--                            <div class="icon">--}}
-{{--                                <span class="fa fa-trophy"></span>--}}
-{{--                            </div>--}}
-{{--                            <h4><a href="#url">Honorable mention award</a></h4>--}}
-{{--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam--}}
-{{--                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap mb-lg-0">
+                            <div class="icon">
+                                <span class="fa fa-trophy"></span>
+                            </div>
+                            <h4><a href="#url">Honorable mention award</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>
+                        </div>
+                    </div>
+                </div>
 
-{{--                <div class="col-lg-6 item">--}}
-{{--                    <div class="card">--}}
-{{--                        <div class="box-wrap mb-0">--}}
-{{--                            <div class="icon">--}}
-{{--                                <span class="fa fa-laptop"></span>--}}
-{{--                            </div>--}}
-{{--                            <h4><a href="#url">Designer of the Company</a></h4>--}}
-{{--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam--}}
-{{--                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                <div class="col-lg-6 item">
+                    <div class="card">
+                        <div class="box-wrap mb-0">
+                            <div class="icon">
+                                <span class="fa fa-laptop"></span>
+                            </div>
+                            <h4><a href="#url">Designer of the Company</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                suscipit qui veritatis. voluptas quia officiis fugit soluta sunt</p>
+                        </div>
+                    </div>
+                </div>
 
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
+            </div>
+        </div>
+    </div>
+</section>
 <!-- //achievements block -->
 @endsection

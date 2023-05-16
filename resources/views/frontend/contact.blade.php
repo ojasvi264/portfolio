@@ -35,7 +35,7 @@
                         </div>
                         <div class="cont-right">
                             <h6>Call Me</h6>
-                            <p><a href="tel:+44 99 555 42">{{$siteSetting->phone}}</a></p>
+                            <p><a href="tel:{{$siteSetting->phone}}">{{$siteSetting->phone}}</a></p>
                         </div>
                     </div>
                     <div class="cont-top margin-up">

@@ -219,8 +219,8 @@
     <div class="container py-3">
         <h6 class="title-small">Get in touch</h6>
         <h3 class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
-        <a href="contact.html" class="btn btn-style btn-primary mr-2">Hire Me </a>
-        <a href="contact.html" class="btn btn-style btn-outline-primary">Get in touch</a>
+        <!-- <a href="contact.html" class="btn btn-style btn-primary mr-2">Hire Me </a> -->
+        <a href="{{route('frontend.contact')}}" class="btn btn-style btn-outline-primary">Get in touch</a>
     </div>
 </section>
 <!-- //freelance hire me -->

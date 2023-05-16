@@ -12,7 +12,7 @@
                     <h5 class="title-small mb-2">Who am i?</h5>
                     <h3 class="title-big">{{$about->title}}</h3>
                     <p class="mt-4">{!! $about->description !!}</p>
-                    <a href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
+                    <a href="{{$about->document}}" class="btn btn-style btn-primary mt-lg-5 mt-4" download>Download CV</a>
                 </div>
             </div>
         </div>

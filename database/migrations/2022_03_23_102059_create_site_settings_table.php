@@ -16,6 +16,7 @@ class CreateSiteSettingsTable extends Migration
         Schema::create('site_settings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->date('dob');
             $table->text('description');
             $table->string('email');
             $table->string('phone');

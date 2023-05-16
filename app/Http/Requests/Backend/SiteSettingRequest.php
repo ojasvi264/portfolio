@@ -25,6 +25,7 @@ class SiteSettingRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'dob' => 'required',
             'email' => 'required',
             'phone' => 'required',
             'address' => 'required',
