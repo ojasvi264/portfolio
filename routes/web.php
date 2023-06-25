@@ -37,6 +37,9 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'middleware' => 'au
 
     Route::resource('progress', 'ProgressController');
 
+    Route::resource('category', 'CategoryController');
+
+
 //    Route::post('/maintenance','AuthController@maintenanceMode')->name('maintenance');
 //
 //    Route::post('update-profile','AuthController@updateProfile')->name('auth.update-profile');

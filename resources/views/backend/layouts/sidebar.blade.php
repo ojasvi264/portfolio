@@ -99,6 +99,29 @@
             <div class="nav-item has-child">
                 <div class="card-header p-0 m-0" id="heading3">
                     <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse"
+                         data-target="#collapse1"
+                         aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="material-icons">note_add</i>
+                        <span> Category Setup</span>
+                        <i class="fa fa-plus ml-auto"></i>
+                    </div>
+                </div>
+                <div id="collapse1" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                    <div class="card-body p-0">
+                        <a class="nav-link p-2 pl-5" href="{{route('category.create')}}">
+                            <i class="material-icons">note_add</i>
+                            <span>Add Category</span>
+                        </a>
+                        <a class="nav-link p-2 pl-5" href="{{route('category.index')}}">
+                            <i class="material-icons">note_add</i>
+                            <span>Category List</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item has-child">
+                <div class="card-header p-0 m-0" id="heading3">
+                    <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse"
                          data-target="#collapse3"
                          aria-expanded="false" aria-controls="collapseTwo">
                         <i class="material-icons">note_add</i>
@@ -118,7 +141,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>  
                     <div class="nav-item has-child">
                         <div class="card-header p-0 m-0" id="heading3">
                             <div class="nav-link collapsed d-flex align-items-center" data-toggle="collapse" data-target="#collapse2"

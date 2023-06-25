@@ -40,7 +40,7 @@
                             <p>{{$siteSetting->name}}</p>
                         </div>
                         <div class="single-info"><span>Age:</span>
-                            <p>25 Years</p>
+                            <p>{{$siteSetting->age}} Years</p>
                         </div>
                         <div class="single-info"><span>From:</span>
                             <p>{{$siteSetting->address}}</p>

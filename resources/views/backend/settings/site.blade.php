@@ -70,17 +70,30 @@
                             @endif
                         </div>
                     </div>
-                    <div class="col-md-12 col-sm-12 p-0 pl-3">
-                        <label for=designation1>Designation<span class="required">*</span> </label>
-                        <input class="form-control form-control-lg mb-1 " id="designation1" type="text" name="designation1"
-                               value="{{old('designation1')?old('designation1'):(isset($edit)?$edit->designation1:'')}}"
-                               placeholder="Your designation1">
-                        @if($errors->first('designation1'))
-                            <div class="text text-danger">
-                                {{$errors->first('designation1')}}
-                            </div>
-                        @endif
-                    </div>
+                    <div class="row pr-3">
+                    <div class="col-md-6 col-sm-6 p-0 pl-3">
+                            <label for="dob" class=""> Date of Birth<span class="required">*</span> </label>
+                            <input class="form-control form-control-lg mb1" id="dob" type="date" name="dob"
+                                   value="{{old('dob')?old('dob'):(isset($edit)?$edit->dob:'')}}"
+                                   placeholder="Input dob">
+                            @if($errors->first('dob'))
+                                <div class="text text-danger">
+                                    {{$errors->first('dob')}}
+                                </div>
+                            @endif
+                        </div>
+                        <div class="col-md-6 col-sm-6 p-0 pl-3">
+                            <label for=designation1>Designation<span class="required">*</span> </label>
+                            <input class="form-control form-control-lg mb-1 " id="designation1" type="text" name="designation1"
+                                value="{{old('designation1')?old('designation1'):(isset($edit)?$edit->designation1:'')}}"
+                                placeholder="Your designation1">
+                            @if($errors->first('designation1'))
+                                <div class="text text-danger">
+                                    {{$errors->first('designation1')}}
+                                </div>
+                            @endif
+                        </div>
+                    </div>      
                     <div class="row pr-3">
                         <div class="col-md-6 col-sm-6 p-0 pl-3">
                             <label for=designation2>Second Designation</label>

@@ -14,10 +14,9 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        $siteSetting = SiteSetting::firstOrFail();
         $about = About::firstOrFail();
         $services = Service::where('status', 1)->latest()->get();
-        return view('frontend.index', compact('services', 'about', 'siteSetting'));
+        return view('frontend.index', compact('services', 'about'));
     }
 
     public function about(){
