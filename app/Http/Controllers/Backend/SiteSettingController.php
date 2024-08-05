@@ -44,7 +44,7 @@ class SiteSettingController extends Controller
         }else{
            SiteSetting::create($request->all());
         }
-        return redirect()->route('site-setting.index')->withMsg('Site Setting has been updated successfully');
+        return redirect()->route('site-setting.index')->withMsg('Site Setting has been updated successfully.');
     }
 
     /**
