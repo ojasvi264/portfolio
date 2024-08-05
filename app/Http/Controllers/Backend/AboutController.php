@@ -44,7 +44,7 @@ class AboutController extends Controller
         }else{
             About::create($request->all());
         }
-        return redirect()->route('about.index')->withMsg('About has been updated successfully');
+        return redirect()->route('about.index')->withMsg('About has been updated successfully.');
     }
 
     /**

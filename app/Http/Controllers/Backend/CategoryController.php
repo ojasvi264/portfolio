@@ -39,7 +39,7 @@ class CategoryController extends Controller
     public function store(CategoryRequest $request)
     {
         Category::create($request->all());
-        return redirect()->route('category.index')->withMsg('Category has been stored successfully');
+        return redirect()->route('category.index')->withMsg('Category has been stored successfully.');
     }
 
     /**
@@ -74,7 +74,7 @@ class CategoryController extends Controller
     public function update(CategoryRequest $request, Category $category)
     {
         $category->update($request->all());
-        return redirect()->route('category.index')->withMsg('Category has been updated successfully');
+        return redirect()->route('category.index')->withMsg('Category has been updated successfully.');
     }
 
     /**
@@ -86,6 +86,6 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         $category->delete();
-        return redirect()->route('category.index')->withMsg('Category has been deleted successfully');
+        return redirect()->route('category.index')->withMsg('Category has been deleted successfully.');
     }
 }

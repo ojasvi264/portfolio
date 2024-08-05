@@ -22,10 +22,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'middleware' => 'au
         return view('backend.dashboard');
     })->name('dashboard');
 
-//    Route::get('profile', function () {
-//        return view('auth.profile');
-//    })->name('profile');
-
 
     Route::resource('site-setting', 'SiteSettingController');
 
@@ -41,8 +37,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'middleware' => 'au
 
 
 //    Route::post('/maintenance','AuthController@maintenanceMode')->name('maintenance');
-//
-//    Route::post('update-profile','AuthController@updateProfile')->name('auth.update-profile');
 });
 
 Auth::routes();
